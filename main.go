@@ -72,7 +72,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/upload", uploadFile)
 	http.HandleFunc("/", Home)
-	log.Fatalln(http.ListenAndServe(":8080", nil))
+	log.Fatalln(http.ListenAndServe(":9090", nil))
 
 }
 
